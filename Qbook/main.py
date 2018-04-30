@@ -58,7 +58,7 @@ class Qbook(object):
                 if not yz:
                     self.db.Install(b_name, book_red_link, n)
                 # self.Sec_page(book_red_link, b_name)
-                L.release()  # 释放锁
+                L.release()  # 释放
 
     def getbody(self, urlx, title, b_name):
         try:
@@ -92,3 +92,4 @@ class Qbook(object):
 if __name__ == '__main__':
     start = Qbook()
     start.Classify()
+    print 000
